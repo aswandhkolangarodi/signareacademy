@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signare Academy | Psychology & Counselling</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#" onclick="router('home')">
+                <img src="logo.jpg" alt="Signare Academy" class="d-inline-block align-text-top">
+                <span style="font-weight: 700; color: var(--primary-color); margin-left: 10px;">SIGNARE ACADEMY</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" id="nav-home" onclick="router('home')">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" id="nav-about" onclick="router('about')">About</a></li>
+                    <li class="nav-item"><a class="nav-link" id="nav-courses" onclick="router('courses')">Courses</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" id="nav-blogs" onclick="router('blogs')">Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link" id="nav-gallery" onclick="router('gallery')">Gallery</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" id="nav-faq" onclick="router('faq')">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" id="nav-contact" onclick="router('contact')">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="active">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h1 class="hero-title">Unlock the Power of the <span class="text-secondary-custom">Human
+                                Mind</span></h1>
+                        <p class="hero-subtitle">Begin your journey in professional counselling and psychology. Empower
+                            yourself to help others heal and grow.</p>
+                        <div class="d-flex gap-3">
+                            <button class="btn btn-primary-custom" onclick="router('courses')">Explore Courses</button>
+                            <button class="btn btn-outline-custom" onclick="router('contact')">Get in Touch</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-5 mt-lg-0">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Psychology Education" class="img-fluid rounded-4 shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="About Us" class="img-fluid rounded-4 shadow">
+                    </div>
+                    <div class="col-lg-6 ps-lg-5">
+                        <h6 class="text-secondary-custom text-uppercase fw-bold mb-2">About Signare Academy</h6>
+                        <h2 class="mb-4">Nurturing Empathy, Building Professionals</h2>
+                        <p class="lead text-muted mb-4">We are dedicated to providing world-class education in
+                            psychology and counselling, bridging the gap between theory and practice.</p>
+                        <p>At Signare Academy, we believe that understanding the human mind is the first step towards
+                            creating a better society. Our curriculum is designed by industry experts to ensure you gain
+                            practical skills that are immediately applicable in real-world scenarios.</p>
+                        <div class="row mt-4">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-check-circle text-secondary-custom me-2 fs-4"></i>
+                                    <span class="fw-bold">Expert Faculty</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-check-circle text-secondary-custom me-2 fs-4"></i>
+                                    <span class="fw-bold">Practical Training</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-check-circle text-secondary-custom me-2 fs-4"></i>
+                                    <span class="fw-bold">Recognized Certification</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-check-circle text-secondary-custom me-2 fs-4"></i>
+                                    <span class="fw-bold">Career Support</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="courses">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h6 class="text-secondary-custom text-uppercase fw-bold">Our Programs</h6>
+                    <h2>Featured Courses</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                class="card-img-top" alt="Counselling Psychology">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Diploma in Counselling Psychology</h5>
+                                <p class="card-text text-muted flex-grow-1">Master the essential skills of counselling.
+                                    Learn to understand human behavior and provide professional support.</p>
+                                <button class="btn btn-outline-custom mt-3 w-100" onclick="router('course-detail')">View
+                                    Curriculum <i class="fas fa-arrow-right ms-2"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more courses here if needed -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Detail Section -->
+        <section id="course-detail">
+            <div class="container">
+                <button class="btn btn-link text-decoration-none text-muted mb-3 p-0" onclick="router('courses')"><i
+                        class="fas fa-arrow-left me-2"></i>Back to Courses</button>
+
+                <div class="course-header">
+                    <h1 class="text-white mb-3">Diploma in Counselling Psychology</h1>
+                    <p class="lead text-white-50 mb-0">A comprehensive journey into the human mind.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h3 class="mb-4 text-center">Course Syllabus</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="chapter-item">
+                                    <h5>Branches of Psychology</h5>
+                                    <p class="small text-muted mb-0">Introduction to the diverse fields.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="chapter-item">
+                                    <h5>Educational Psychology</h5>
+                                    <p class="small text-muted mb-0">Learning processes & development.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="chapter-item">
+                                    <h5>Developmental Psychology</h5>
+                                    <p class="small text-muted mb-0">Growth across the lifespan.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="chapter-item">
+                                    <h5>Personality Psychology</h5>
+                                    <p class="small text-muted mb-0">Theories of individual differences.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="chapter-item">
+                                    <h5>Behavioural Psychology</h5>
+                                    <p class="small text-muted mb-0">Conditioning and behavior analysis.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="chapter-item">
+                                    <h5>Social Psychology</h5>
+                                    <p class="small text-muted mb-0">Group dynamics and influence.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="chapter-item">
+                                    <h5>Industrial Psychology</h5>
+                                    <p class="small text-muted mb-0">Workplace behavior and efficiency.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="chapter-item">
+                                    <h5>Child Psychology</h5>
+                                    <p class="small text-muted mb-0">Understanding the young mind.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-5">
+                            <button class="btn btn-primary-custom btn-lg" onclick="router('contact')">Enroll
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blogs Section -->
+        <section id="blogs">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h6 class="text-secondary-custom text-uppercase fw-bold">Latest Insights</h6>
+                    <h2>Our Blog</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100" onclick="openBlog('The Importance of Mental Health Awareness')">
+                            <img src="https://images.unsplash.com/photo-1499750310159-5b5f226932b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                class="card-img-top" alt="Blog 1">
+                            <div class="card-body">
+                                <small class="text-muted">Dec 28, 2024</small>
+                                <h5 class="card-title mt-2">The Importance of Mental Health Awareness</h5>
+                                <p class="card-text text-muted">Why understanding mental health is crucial in today's
+                                    fast-paced world...</p>
+                                <a href="#" class="text-primary-custom fw-bold text-decoration-none">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100" onclick="openBlog('Careers in Psychology')">
+                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                class="card-img-top" alt="Blog 2">
+                            <div class="card-body">
+                                <small class="text-muted">Dec 20, 2024</small>
+                                <h5 class="card-title mt-2">Careers in Psychology</h5>
+                                <p class="card-text text-muted">Exploring the vast career opportunities available for
+                                    psychology graduates...</p>
+                                <a href="#" class="text-primary-custom fw-bold text-decoration-none">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100" onclick="openBlog('Understanding Child Development')">
+                            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                class="card-img-top" alt="Blog 3">
+                            <div class="card-body">
+                                <small class="text-muted">Dec 15, 2024</small>
+                                <h5 class="card-title mt-2">Understanding Child Development</h5>
+                                <p class="card-text text-muted">Key milestones in a child's psychological growth and how
+                                    to support them...</p>
+                                <a href="#" class="text-primary-custom fw-bold text-decoration-none">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Detail Section -->
+        <section id="blog-detail">
+            <div class="container">
+                <button class="btn btn-link text-decoration-none text-muted mb-3 p-0" onclick="router('blogs')"><i
+                        class="fas fa-arrow-left me-2"></i>Back to Blogs</button>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <article class="bg-white p-4 p-md-5 rounded-4 shadow-sm">
+                            <h1 id="blog-detail-title" class="mb-4">Blog Title</h1>
+                            <img src="https://images.unsplash.com/photo-1499750310159-5b5f226932b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                class="img-fluid rounded-3 mb-4 w-100" alt="Blog Detail">
+                            <div class="blog-text text-muted">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                                    qui officia deserunt mollit anim id est laborum.</p>
+                                <h4>Key Takeaways</h4>
+                                <ul>
+                                    <li>Understanding the core concepts is vital.</li>
+                                    <li>Practical application enhances learning.</li>
+                                    <li>Continuous development is key in psychology.</li>
+                                </ul>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                                    architecto beatae vitae dicta sunt explicabo.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h6 class="text-secondary-custom text-uppercase fw-bold">Campus Life</h6>
+                    <h2>Our Gallery</h2>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-4 col-sm-6">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            class="gallery-img" alt="Gallery 1">
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            class="gallery-img" alt="Gallery 2">
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            class="gallery-img" alt="Gallery 3">
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            class="gallery-img" alt="Gallery 4">
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            class="gallery-img" alt="Gallery 5">
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <img src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            class="gallery-img" alt="Gallery 6">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h6 class="text-secondary-custom text-uppercase fw-bold">Common Questions</h6>
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item border-0 mb-3 shadow-sm rounded overflow-hidden">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq1">
+                                        What are the prerequisites for the Diploma?
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted">
+                                        The diploma is open to anyone with a high school education or equivalent who has
+                                        a passion for psychology. No prior experience is required.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 mb-3 shadow-sm rounded overflow-hidden">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq2">
+                                        Is this course recognized?
+                                    </button>
+                                </h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted">
+                                        Yes, our courses are recognized by leading industry bodies and provide a solid
+                                        foundation for your career in counselling and psychology.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 mb-3 shadow-sm rounded overflow-hidden">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq3">
+                                        Can I study online?
+                                    </button>
+                                </h2>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted">
+                                        Absolutely! We offer a flexible hybrid model that allows you to attend classes
+                                        in-person or access our comprehensive online learning platform.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 mb-3 shadow-sm rounded overflow-hidden">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq4">
+                                        How long is the course?
+                                    </button>
+                                </h2>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted">
+                                        The Diploma in Counselling Psychology is typically a 6-12 month program,
+                                        depending on your pace and study mode (full-time or part-time).
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="card shadow-lg border-0 overflow-hidden rounded-4">
+                            <div class="row g-0">
+                                <div class="col-md-5 bg-primary text-white p-5 d-flex flex-column justify-content-center"
+                                    style="background-color: var(--primary-color) !important;">
+                                    <h3 class="mb-4">Get In Touch</h3>
+                                    <div class="d-flex align-items-center mb-4">
+                                        <div class="me-3 fs-4"><i class="fas fa-map-marker-alt"></i></div>
+                                        <div>
+                                            <h6 class="mb-0">Location</h6>
+                                            <p class="mb-0 small text-white-50">123 Academy Street, Education City</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-4">
+                                        <div class="me-3 fs-4"><i class="fas fa-phone"></i></div>
+                                        <div>
+                                            <h6 class="mb-0">Phone</h6>
+                                            <p class="mb-0 small text-white-50">+1 234 567 890</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-3 fs-4"><i class="fas fa-envelope"></i></div>
+                                        <div>
+                                            <h6 class="mb-0">Email</h6>
+                                            <p class="mb-0 small text-white-50">info@signareacademy.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 p-5 bg-white">
+                                    <h3 class="mb-4 text-dark">Send us a Message</h3>
+                                    <form onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                                        <div class="mb-3">
+                                            <label class="form-label text-muted small">Your Name</label>
+                                            <input type="text" class="form-control" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label text-muted small">Your Email</label>
+                                            <input type="email" class="form-control" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label text-muted small">Message</label>
+                                            <textarea class="form-control" rows="4" required></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary-custom w-100">Send Message</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Signare Academy. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Router Function
+        function router(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Show target section
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                targetSection.classList.add('active');
+                window.scrollTo(0, 0);
+            }
+
+            // Update Nav Active State
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+            });
+
+            const activeLink = document.getElementById('nav-' + sectionId);
+            if (activeLink) {
+                activeLink.classList.add('active');
+            }
+
+            // Close mobile menu if open
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+            if (navbarCollapse.classList.contains('show')) {
+                const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                    toggle: true
+                });
+            }
+        }
+
+        // Open Blog Detail
+        function openBlog(title) {
+            document.getElementById('blog-detail-title').innerText = title;
+            router('blog-detail');
+        }
+    </script>
+</body>
+
+</html>
